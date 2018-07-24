@@ -15,6 +15,7 @@ public class Converter
             binary.Append(number % 2);
             number /= 2;
         }
-        return result;
+        return binary.Length == 0 ? "0" : binary.ToString(); ;
     }
+    
 }
