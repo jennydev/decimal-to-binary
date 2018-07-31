@@ -17,5 +17,4 @@ public class Converter
         }
         return result.Length == 0 ? "0" : result;
     }
-    
 }
