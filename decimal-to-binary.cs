@@ -18,3 +18,29 @@ public class Converter
         return result.Length == 0 ? "0" : result;
     }
 }
+
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		int n = int.Parse(Console.ReadLine());
+		List<int> numbers = new List<int>();
+		
+		for(int i = 0;i < n; i++ )
+		{
+			string binaryNumb = Console.ReadLine();
+			
+			numbers.Add(Convert.ToInt32(binaryNumb, 2));
+		}
+		
+		foreach(var num in numbers )
+		{
+			Console.WriteLine(num);
+		}
+	}
+}
+
+//Resheni s malko korekcia ot kolegi i spravka v neta
